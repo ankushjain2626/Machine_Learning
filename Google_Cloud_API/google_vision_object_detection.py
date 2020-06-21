@@ -8,7 +8,7 @@ from PIL import Image
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"GoogleCloudPlatformKey.json"
 client = vision.ImageAnnotatorClient()
 
-file_name = 'ikea.jpg'
+file_name = 'sample_input.jpg'
 image_path = os.path.join(r'.\Images', file_name)
 
 with io.open(image_path, 'rb') as image_file:
